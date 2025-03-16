@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=BarlowCondensed:wght@400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap");
 
 
 @tailwind base;
@@ -7,5 +8,5 @@
 @tailwind utilities;
 
 html,body,main {
-  font-size: 'Barlow Condensed', 'sans-serif';
+  
 }
