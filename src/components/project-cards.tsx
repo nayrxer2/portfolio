@@ -17,7 +17,7 @@ const ProjectCards = ({
 }: ProjectCardsProps) => {
   return (
     <React.Fragment>
-      <div className='rounded-2xl bg-gray-50 drop-shadow-lg w-96'>
+      <div className='rounded-2xl bg-gray-50 drop-shadow-lg w-96 animate-'>
         <div>
           <img src={imgSrc} alt={title} className='w-full'/>
         </div>

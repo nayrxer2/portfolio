@@ -1,20 +1,31 @@
 'use client';
 
+import AboutMeSection from "@/components/about-me";
+import ContactMeSection from "@/components/contact-me";
+import SocialNavLinks from "@/components/social-nav-links";
 import WelcomePage from "@/components/welcome-page";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function Home() {
-  const [message, setMessage] = useState('')
 
-  const handleMessage = (newMessage:string) => {
-    setMessage(newMessage)
+export default function Home() {
+  const [ message, setMessage ] = useState('')
+
+  const handleMessage = (message:any) => {
+    setMessage(message)
+
+    console.log(message)
   }
   
   return (
-    <div className="relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-[length:400%_400%] animate-gradient-animation">
-      <WelcomePage/>
-      <p>{message}</p>
+    <div className="relative">
+      <WelcomePage sendToParent={handleMessage}/>
+      <p className="w-32 h-32 bg-yellow-500 text-black">{message}</p>
+      <AboutMeSection/>
+      <ContactMeSection/>
+      <div className="fixed h-screen left-12 top-0 bottom-0 bg-red-500">
+        <SocialNavLinks/>
+      </div>
     </div>
   );
 }

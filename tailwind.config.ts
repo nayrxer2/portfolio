@@ -25,13 +25,14 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        'gradient-animation': 'gradient 6s ease-out infinite'
+        'gradient-animation': '3s ease infinite',
+        'spin-fast': 'spin linear 1s infinite'
       },
       keyframes: {
         gradient: {
-          '0%': { backgroundPosition: '0% 50%', },
+          '0%': {},
+          '100%': {  backgroundPosition: '0% 50%', },
           '50%': { backgroundPostion: '100% 50%', },
-          '100%': {  backgroundPosition: '0% 50%', }
         }
       },
       fontFamily: {

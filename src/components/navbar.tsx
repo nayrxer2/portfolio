@@ -4,11 +4,14 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div className='flex justify-between'>
-      <Image src={''} alt='' width={24} height={24}/>
+      <div>
+        <Image src={''} alt='' width={24} height={24}/>
+        <h1>RG</h1>
+      </div>
       <div className='flex space-x-12'>
-        <div>works</div>
+        <div>about</div>
+        <div>portfolio</div>
         <div>resume</div>
-        <div>contacts</div>
       </div>
     </div>
   )
