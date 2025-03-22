@@ -1,9 +1,11 @@
 'use client';
 
-import AboutMeSection from "@/components/about-me";
-import ContactMeSection from "@/components/contact-me";
+import AboutMeSection from "@/components/about-section";
+import ContactMeSection from "@/components/contact-section";
+import SectionCount from "@/components/section-count";
 import SocialNavLinks from "@/components/social-nav-links";
 import WelcomePage from "@/components/welcome-page";
+import { transform } from "next/dist/build/swc";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -23,9 +25,10 @@ export default function Home() {
       <p className="w-32 h-32 bg-yellow-500 text-black">{message}</p>
       <AboutMeSection/>
       <ContactMeSection/>
-      <div className="fixed h-screen left-12 top-0 bottom-0 bg-red-500">
+      <div className="fixed h-screen left-12 top-0 translate-y-[40%] bottom-0 bg-red-500">
         <SocialNavLinks/>
       </div>
+      <SectionCount sectionNum="5"/>
     </div>
   );
 }
