@@ -20,7 +20,8 @@ export default function Home() {
   }
   
   return (
-    <div className="relative">
+    <div className="relative overflow-visible">
+      <div className="sticky top-0 bg-red-100 w-screen h-4">aaaa</div>
       <WelcomePage sendToParent={handleMessage}/>
       <p className="w-32 h-32 bg-yellow-500 text-black">{message}</p>
       <AboutMeSection/>
