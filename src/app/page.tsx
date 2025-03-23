@@ -23,7 +23,7 @@ export default function Home() {
     <div className="relative overflow-visible">
       <div className="sticky top-0 bg-red-100 w-screen h-4">aaaa</div>
       <WelcomePage sendToParent={handleMessage}/>
-      <p className="w-32 h-32 bg-yellow-500 text-black">{message}</p>
+      {/* <p className="w-32 h-32 bg-yellow-500 text-black">{message}</p> */}
       <AboutMeSection/>
       <ContactMeSection/>
       <div className="fixed h-screen left-12 top-0 translate-y-[40%] bottom-0 bg-red-500">
