@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='sticky top-4 flex justify-between items-center h-12 p-4 bg-blue-700'>
+    <div className='sticky top-4 flex justify-between items-center h-12 p-4 bg-blue-700 z-50'>
       <div className='flex'>
         <Image src={''} alt='' width={24} height={24}/>
         <h1>RG</h1>

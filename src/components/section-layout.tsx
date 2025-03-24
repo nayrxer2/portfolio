@@ -1,14 +1,16 @@
 import React from 'react'
 
 export interface SectionLayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode,
+  className?: string,
 }
 
 export default function SectionLayout({
-  children
+  children,
+  className
 }: SectionLayoutProps) {
   return (
-    <div className='flex relative bg-transparent'>
+    <div className={`${className} h-screen grid items-center`}>
       {children}
     </div>
   )
