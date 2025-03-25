@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import SectionLayout from './section-layout';
+import SectionCount from './section-count';
 
 const WelcomePage = ({sendToParent}: any) => {
   return (

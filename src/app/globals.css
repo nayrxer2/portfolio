@@ -8,5 +8,5 @@
 @tailwind utilities;
 
 html,body,main {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }

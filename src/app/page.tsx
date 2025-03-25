@@ -25,10 +25,8 @@ export default function Home() {
       {/* <p className="w-32 h-32 bg-yellow-500 text-black">{message}</p> */}
       <AboutMeSection/>
       <ContactMeSection/>
-      <div className="fixed h-screen left-12 top-0 translate-y-[40%] bottom-0 bg-red-500">
-        <SocialNavLinks/>
-      </div>
-      <SectionCount sectionNum="5"/>
+      {/* sidenav */}
+      <SocialNavLinks/>
     </div>
   );
 }
