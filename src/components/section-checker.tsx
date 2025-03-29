@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-export default function TestSection() {
+export default function SectionChecker() {
   const [ isInView, setIsInView ] = useState(false)
 
   const targetDivRef = useRef(null)
