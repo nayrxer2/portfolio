@@ -4,6 +4,7 @@ import AboutMeSection from "@/components/about-section";
 import ContactMeSection from "@/components/contact-section";
 import SectionCount from "@/components/section-count";
 import SocialNavLinks from "@/components/social-nav-links";
+import SectionChecker from "@/components/section-checker";
 import WelcomePage from "@/components/welcome-page";
 import { transform } from "next/dist/build/swc";
 import Image from "next/image";
@@ -27,6 +28,7 @@ export default function Home() {
       <ContactMeSection/>
       {/* sidenav */}
       <SocialNavLinks/>
+      <SectionChecker/>
     </div>
   );
 }
